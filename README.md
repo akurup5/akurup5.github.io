@@ -1,1 +1,1 @@
-<meta http-equiv="refresh" content="1; URL=Hindi Info.html" />
+<meta http-equiv="refresh" content="1; URL=https://akurup5.github.io/patinfo.html" />
