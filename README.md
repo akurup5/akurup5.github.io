@@ -1,2 +1,1 @@
-# akurup5.github.io
-<meta http-equiv="refresh" content="time; URL=Hindi Info.html" />
+<meta http-equiv="refresh" content="1; URL=Hindi Info.html" />
