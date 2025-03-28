@@ -26,9 +26,9 @@
 
 | Parameter                         | Formula                                                                                                                                                                                                                                                                                                 |
 | --------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| PAO$_2$                           | $$FiO_2 * (P_{atm} - P_{H_2O})$$ where normal values are 0.21; 760 and 47 mm Hg respectively                                                                                                                                                                                                              |
+| PAO$_2$ <br> (Alveolar gas equation)                          | $$FiO_2 * (P_{atm} - P_{H_2O})$$ where normal values are 0.21; 760 and 47 mm Hg respectively                                                                                                                                                                                                              |
 | PaO2                              | $$PAO_2 - \frac{PaCO_2}{R}$$ where R is the Respiratory exchange ratio (Normally 0.8)                                                                                                                                                                                                                   |
-| Vd<br>Dead Space                  | $$Vt *\frac{PaCO_2 - ETCO_2}{PaCO_2}$$                                                                                                                                                                                                                                                                  |
+| Vd<br>(Dead Space)                  | $$Vt *\frac{PaCO_2 - ETCO_2}{PaCO_2}$$                                                                                                                                                                                                                                                                  |
 | Compliance                        | $$\frac{\Delta V}{\Delta P}$$                                                                                                                                                                                                                                                                           |
 | Static Compliance                 | $$\frac{Vt}{Pplat-PEEP}$$ Normal range : > 1 mL/cm H$_2$O/kg                                                                                                                                                                                                                                             |
 | Dynamic compliance                | $$\frac{Vt}{PIP-PEEP}$$ Normal : ~15-20% less than static compliance                                                                                                                                                                                                                                     |
@@ -49,7 +49,8 @@
 | a/A ratio                         | $$\frac{PaO_2}{PAO_2}$$ Normal value is above 75%                                                                                                                                                                                                                                                        |
 | Respiratory Index                 | $$\frac{PAO_2-PaO_2}{PaO2}$$ Normal : < 0.4                                                                                                                                                                                                                                                              |
 | Ventilation Index                 | $$\frac{RR*PiP*PaCO_2}{1000}$$                                                                                                                                                                                                                                                                          |
-| Ventilatory ratio                 | $$\frac{VE_{measured}-PaCO_2\;measured}{VE_{ideal}*PaCO_2\;ideal}$$ where VE measured is the measured minute ventilation in mL/min; VE ideal is predicted BW * 100 and PaCO$_2$ ideal is the ideal value of CO2 (kept at 37.5 mm Hg)                                                                     |
+| Ventilatory ratio                 | $$\frac{VE_{measured}-PaCO_2\;measured}{VE_{ideal}*PaCO_2\;ideal}$$ <br>where VE measured is the measured minute ventilation in mL/min; VE ideal is predicted BW * 100 and PaCO\$_2$ ideal is the ideal value of CO2 (kept at 37.5 mm Hg)                                                                     |
+| Minute ventilation | $$Minute\;ventilation\;volume=Tidal\;volume*Respiratory\;rate$$ <br> Normal MVV is 3.5 * BSA and 5 * BSA for females and males respectively|
 
 ## Fluid and electrolytes
 ### Sodium
@@ -76,27 +77,27 @@
 | Acidosis                 | Rise in $\ce{K+}$ by 0.6 for every 0.1 fall in pH                                                                                                                                                |
 | Thrombocytosis           | Rise in $\ce{K+}$ by 0.15 for every 100,000/mm$^3$ rise in platelet count                                                                                                                        |
 | **Calculations**         |                                                                                                                                                                                                  |
-| TTKG                     | $$\frac{\ce{K+}\;Urine}{\ce{K+}\;Plasma}*\frac{Plasma\;osmolality}{Urine\;osmolality}$$In Hyperkalemia $\implies$ < 7 = Hypoaldosteronism<br>In Hypokalemia $\implies$> 4 = Renal potassium loss |
+| TTKG                     | $$\frac{\ce{K+}\;Urine}{\ce{K+}\;Plasma}*\frac{Plasma\;osmolality}{Urine\;osmolality}$$ In Hyperkalemia $\implies$ < 7 = Hypoaldosteronism<br>In Hypokalemia $\implies$ > 4 = Renal potassium loss |
 
 ## Critical Care
 ### Cardiovascular
 | Parameter                                          |                                                             Formula                                                             |
 | -------------------------------------------------- |:-------------------------------------------------------------------------------------------------------------------------------:|
 | MAP                                                |                                                $$DBP+\frac{Pulse\;pressure}{3}$$                                                |
-| MAP (5th centile)                                  |                                                         $$1.5*Age+40$$                                                          |
-| MAP (50th centile)                                 |                                                         $$1.5*Age+55$$                                                          |
-| SBP (5th centile)                                  |                                                         $$70+(Age*2)$$                                                          |
+| MAP (5th centile)                                  |                                                         $$1.5*Age\;(in\;years)\;+40$$                                                          |
+| MAP (50th centile)                                 |                                                         $$1.5*Age\;(in\;years)\;+55$$                                                          |
+| SBP (5th centile)                                  |                                                         $$70+(Age\;(in\;years)\;*2)$$                                                          |
 | Cardiac output                                     |                                                 $$Stroke\;Volume *Heart\;Rate$$                                                 |
 | Cardiac Index                                      |                                         $$\frac{Cardiac\;output}{Body\;surface\;area}$$                                         |
 | Cardiac Index (by ECHO)                            |                                $$\frac{\pi *(\frac{LVOT\;diameter}{2})^2*VTI*Heart\;Rate}{BSA}$$                                |
 | Stroke Index                                       |                                             $$\frac{Cardiac\;Index}{Heart\;Rate}$$                                              |
 | Systemic Vascular Resistance Index                 |                                             $$\frac{80*(MAP-CVP)}{Cardiac\;Index}$$                                             |
-| IVC Collapsibility Index                           |                                 $$\frac{D_{max}-D_{min}}{D_{max}}$$>50% considered significant                                  |
-| IVC Distensibility Index                           |                                 $$\frac{D_{max}-D_{min}}{D_{min}}$$>18% considered significant                                  |
+| IVC Collapsibility Index                           |                                 $$\frac{D_{max}-D_{min}}{D_{max}}$$ >50% considered significant                                  |
+| IVC Distensibility Index                           |                                 $$\frac{D_{max}-D_{min}}{D_{min}}$$ >18% considered significant                                  |
 | **LV function**                                    |                                                                                                                                 |
 | Eyeballing technique                               |                                     To determine the systolic function by visual estimation                                     |
-| Simpson’s Biplane method and Fractional shortening |                     $$\frac{EDV-ESV}{EDV}*100$$Normal fractional shortening in children ranges from 28-56%                      |
-| EPSS (End-point septal separation)                 | Distance of MV leaflet from the ventricular wall (measured in M-mode; PLAX view)<br>< 7 mm : Normal<br>> 12 mm : LV dysfunction |
+| Simpson’s Biplane method and Fractional shortening |                     $$\frac{EDV-ESV}{EDV}*100$$ Normal fractional shortening in children ranges from 28-56%                      |
+| EPSS (End-point septal separation)                 | Distance of MV leaflet from the ventricular wall (measured in M-mode; PLAX view)<br> < 7 mm : Normal<br>> 12 mm : LV dysfunction |
 | Aortic blood flow variation ($\Delta$VTI)          | $$\frac{V_{max}-V_{min}}{(V_{max}+V_{min})/2}*100$$                                                                                                                                |
 
 
